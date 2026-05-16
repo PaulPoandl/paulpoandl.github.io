@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility - UniversityFlow</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .accessibility-content {
+            line-height: 1.8;
+            background: #ffffff;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin: 2rem auto;
+            max-width: 800px;
+            line-height: 1.8;
+        }
+        
+        .accessibility-content h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .accessibility-content h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.25rem;
+        }
+        
+        .accessibility-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .accessibility-content ul {
+            padding-left: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .accessibility-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .accessibility-content a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+        
+        .accessibility-content a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <img src="Bilder/UNIversityFLOW.png" alt="UniversityFlow Logo">
+            </a>
+            <nav aria-label="Hauptnavigation">
+                <ul>
+                    <li><a href="index.html">Startseite</a></li>
+                    <li><a href="about.html">Über uns</a></li>
+                    <li><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="accessibility-content">
+            <h1>Erklärung zur Barrierefreiheit</h1>
+            <p>UniversityFlow Solutions GmbH verpflichtet sich, die digitale Barrierefreiheit dieser Website <a href="https://paulpoandl.github.io/">https://paulpoandl.github.io/</a> zu gewährleisten. Diese Erklärung gilt nur für die bereits genannte Website.</p>
+    
+            <h2>1. Stand der Vereinbarkeit mit den Anforderungen</h2>
+            <p>Unsere Website ist weitgehend mit den Anforderungen des Web-Zugänglichkeits-Gesetzes (WZG) vereinbar und orientiert sich an den Richtlinien für barrierefreie Webinhalte (WCAG 2.2) auf Konformitätsstufe AA.</p>
+    
+            <h2>2. Nicht barrierefreie Inhalte</h2>
+            <p>Wir bitten um ihre geschätzte Rückmeldung, sollten ihnen dennoch etwaige Mängel auffallen.</p>
+    
+            <h2>3. Maßnahmen zur Barrierefreiheit</h2>
+            <p>Diese Maßnahmen wurden getroffen, damit diese Website als barrierefrei gilt:</p>
+            <ul>
+                <li>Alle auffindbaren Bilder sind mit einem beschreibenden Alt-Text untertitelt. Die nur dekorativen Grafiken (wie Feature-Icons) verwenden ein leeres Attribut (alt=""), damit sie von Screenreadern übersprungen werden.</li>
+                <li>Durchgehend wird semantisches HTML (&lt;header&gt;, &lt;nav&gt;, &lt;main&gt;, &lt;footer&gt;) sowie eine logische Überschriftenhierarchie (<h1> bis <h4>) zur klaren Gliederung der Inhalte angewendet.</li>
+                <li>Alle interaktiven Elemente (Links, Buttons, Formularfelder) werden bei der Bedienung mit der Tastatur deutlich erkennbar, farblich abgesetzte Fokus-umrandet</li>
+                <li>Die gesamte Webinhalte sind vollständig per Tastatur (Tab-Taste) bedienbar. Es sind keine interaktiven Komponenten, in denen Nutzer:innen "gefangen" bleiben könnten, vorhanden.</li>
+                <li>Es wurde überall er Mindesdkontrast eigehalten.</li>
+                <li>Die Inhalte können bis zu 200 % vergrößert werden, passen sich an das jeweilige Endgerät an, ohne dass es zu Problemen mit dem Layout oder Textüberlappungen kommt.</li>
+                <li>Die Website unterstützt Passwortmanager und enthält keine kognitiven Hürden wie Rätsel oder bildbasierte CAPTCHAs.</li>
+                <li>Alle klickbaren Elemente (Buttons, Links) sind ausreichend groß und haben genügend Abstand zueinander, um auch auf mobilen Geräten gut bedienbar zu sein..</li>
+                <li>Unter der Verwendung von automatisierten Testwerkzeuge (z. B. WAVE) sowie manueller Prüfungen wurde diese Erklärung erstellt.</li>
+            </ul>
+    
+            <h2>4. Feedback und Kontakt</h2>
+            <p>Wir versuchen durchgehend die Barrierefreiheit unserer Website zu verbessern. Wenn Sie Verbesserungsvorschläge haben oder Verstöße auffinden, kontaktieren Sie uns bitte:</p>
+            <ul>
+                <li>E-Mail: <a href="mailto:paul.poandl@universityflow.at">paul.poandl@universityflow.at</a></li>
+                <li>Telefon: +433 1 555 1234</li>
+                <li>Ansprechpartner: Paul Poandl</li>
+            </ul>
+    
+            <h2>5. Durchsetzungsverfahren</h2>
+            <p>Wenn Sie mit der Antwort aus dem oben genannten Kontakt nicht zufrieden sind, können Sie sich an die Beschwerdestelle wenden:</p>
+            <ul>
+                <li>Sozialministeriumservice</li>
+                <li>Website: <a href="https://www.sozialministeriumservice.at" target="_blank">https://www.sozialministeriumservice.at</a></li>
+                <li>E-Mail: <a href="mailto:post@sozialministeriumservice.at">post@sozialministeriumservice.at</a></li>
+            </ul>
+    
+            <h2>6. Aktualisierung der Erklärung</h2>
+            <p>Diese Erklärung wurde zuletzt am 15.05.2026 aktualisiert. Wir überprüfen die Barrierefreiheit unserer Website regelmäßig.</p>
+        </div>
+    </main>
+
+    <footer>
+        <nav aria-label="Rechtliche Navigation">
+            <a href="impressum.html">Impressum</a>
+            <a href="privacy.html">Datenschutz</a>
+            <a href="license.html">Lizenz</a>
+            <a href="copyright.html">Urheberrecht</a>
+            <a href="accessibility.html" aria-current="page">Barrierefreiheit</a>
+        </nav>
+        <p>&copy; 2026 UniversityFlow Solutions GmbH</p>
+    </footer>
+</body>
+</html>

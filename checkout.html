@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - UniversityFlow Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .checkout-form { display: flex; flex-direction: column; gap: 1.5rem; max-width: 600px; margin: 0 auto; background: var(--secondary-color); padding: 2rem; border-radius: 8px; border: 1px solid #ddd; }
+        .checkout-form fieldset { border: 1px solid #ccc; padding: 1.5rem; border-radius: 4px; background-color: var(--white); }
+        .checkout-form legend { font-weight: bold; color: var(--primary-color); padding: 0 5px; }
+        .checkout-form .form-group { margin-bottom: 1rem; }
+        .checkout-form label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .checkout-form input[type="text"], .checkout-form input[type="email"] { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        .checkout-form .checkbox-group label { display: flex; gap: 10px; font-weight: normal; font-size: 0.9rem; align-items: flex-start; }
+        .checkout-form .checkbox-group input[type="checkbox"] { margin-top: 4px; }
+        
+        .info-box { background-color: #f0f7ff; border-left: 4px solid var(--primary-color); padding: 1rem; font-size: 0.95rem; line-height: 1.5; }
+        .info-box ol { margin: 0.5rem 0 0 0; padding-left: 1.5rem; }
+        .info-box li { margin-bottom: 0.3rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="header-logo">
+                <img src="Bilder/UNIversityFLOW.png" alt="UniversityFlow Logo">
+            </a>
+            <nav aria-label="Hauptnavigation">
+                <ul><li><a href="index.html">← Zurück zum Shop</a></li></ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1 style="text-align: center;">Kasse & Bestellung</h1>
+        <p style="text-align: center; margin-bottom: 2rem;">Sie erwerben: <strong>UniversityFlow Premium</strong> für <strong>4,99 € / Monat</strong>.</p>
+        
+        <form class="checkout-form" onsubmit="alert('Vielen Dank für Ihre Bestellung! Sie erhalten in Kürze eine E-Mail mit der Rechnung.'); window.location.href='index.html'; return false;">
+            
+            <fieldset>
+                <legend>1. Ihre Daten</legend>
+                <div class="form-group"><label for="fname">Vorname *</label><input type="text" id="fname" required></div>
+                <div class="form-group"><label for="lname">Nachname *</label><input type="text" id="lname" required></div>
+                <div class="form-group"><label for="email">E-Mail-Adresse *</label><input type="email" id="email" required></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Kaufabwicklung & Zahlung</legend>
+                <div class="info-box">
+                    <strong>So funktioniert der Kauf:</strong>
+                    <ol>
+                        <li>Sie senden diese Bestellung verbindlich ab.</li>
+                        <li>Wir senden Ihnen die Rechnung per E-Mail zu.</li>
+                        <li>Nach Zahlungseingang (per Überweisung) erhalten Sie Ihren Lizenzschlüssel zur Aktivierung direkt per E-Mail.</li>
+                    </ol>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Rechtliche Hinweise</legend>
+                <div class="checkbox-group" style="display: flex; flex-direction: column; gap: 1rem;">
+                    <label><input type="checkbox" required> Ich habe die <a href="license.html" target="_blank">EULA (Lizenz)</a> gelesen und stimme diesen zu. *</label>
+                    <label><input type="checkbox" required> Ich habe die <a href="privacy.html" target="_blank">Datenschutzerklärung</a> zur Kenntnis genommen. *</label>
+                </div>
+            </fieldset>
+            
+            <button type="submit" class="button" style="width: 100%; font-size: 1.2rem; padding: 15px; margin-top: 0.5rem;">Jetzt zahlungspflichtig bestellen</button>
+        </form>
+    </main>
+    
+    <footer>
+        <p style="text-align: center; padding: 2rem; margin: 0;">&copy; 2026 UniversityFlow Solutions GmbH</p>
+    </footer>
+</body>
+</html>
